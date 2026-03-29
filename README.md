@@ -117,3 +117,10 @@ To **skip auto-boot** and force the full menu: hold USER while pressing RST.
 │   └── flash_firmware.py   # Flash utility
 └── firmware/               # Put your .bin files here
 ```
+
+
+<form action="https://www.paypal.com/donate" method="post" target="_top">
+<input type="hidden" name="hosted_button_id" value="MBFFL689C3TNQ" />
+<input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+<img alt="" border="0" src="https://www.paypal.com/en_GB/i/scr/pixel.gif" width="1" height="1" />
+</form>
