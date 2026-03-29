@@ -121,6 +121,6 @@ To **skip auto-boot** and force the full menu: hold USER while pressing RST.
 
 ## 💖 Support this project
 
-If you find this project helpful, consider donating:
+If you find this project useful, consider donating:
 
-[![Donate with PayPal](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=MBFFL689C3TNQ)
+[![Donate with PayPal](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=WGXENXVVNP4RG)
