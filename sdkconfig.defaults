@@ -1,0 +1,26 @@
+# Required by Arduino framework as IDF component
+CONFIG_FREERTOS_HZ=1000
+CONFIG_AUTOSTART_ARDUINO=y
+
+# Flash size (16MB for Heltec V4.2)
+CONFIG_ESPTOOLPY_FLASHSIZE_16MB=y
+
+# USB CDC serial (Heltec V4.2 uses USB-C with ESP32-S3 native USB)
+CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y
+
+# Bootloader log level
+CONFIG_BOOTLOADER_LOG_LEVEL_INFO=y
+
+# Custom partition table (required for multi-boot + per-firmware data isolation)
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partitions.csv"
+CONFIG_PARTITION_TABLE_OFFSET=0x8000
+
+# Disable PT MD5 so the selector and bootloader can rewrite the partition table
+# to point nvs/spiffs to per-firmware data areas without recalculating the hash
+CONFIG_PARTITION_TABLE_MD5=n
+
+# Allow writes to the partition table region (0x8000).
+# Required for per-firmware data isolation: the selector rewrites the PT's
+# nvs/spiffs entries to point to each firmware's dedicated data area.
+CONFIG_SPI_FLASH_DANGEROUS_WRITE_ALLOWED=y
