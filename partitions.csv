@@ -1,0 +1,13 @@
+# ESP32-S3 Multi-Boot Partition Table (16MB Flash)
+# NVS relocated to end of flash to allow 32KB size (firmware native = 20KB).
+# SPIFFS shrunk to 544KB to fit 4x32KB NVS backups + active NVS within 3008KB
+# region after OTA slots. See src/config.h for the full flash map.
+# Name,      Type, SubType, Offset,     Size,       Flags
+otadata,     data, ota,     0xE000,     0x2000,
+app0,        app,  factory, 0x10000,    0x100000,
+ota_0,       app,  ota_0,   0x110000,   0x190000,   
+ota_1,       app,  ota_1,   0x2A0000,   0x190000,   
+ota_2,       app,  ota_2,   0x430000,   0x720000,   
+ota_3,       app,  ota_3,   0xB50000,   0x1C0000,   
+spiffs,      data, spiffs,  0xD10000,   0x88000,
+nvs,         data, nvs,     0xFB8000,   0x8000,

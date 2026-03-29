@@ -1,0 +1,9 @@
+.pio/
+.vscode/
+.claude/
+CLAUDE.md
+firmware/*.bin
+__pycache__/
+*.pyc
+*.bak
+sdkconfig.selector
