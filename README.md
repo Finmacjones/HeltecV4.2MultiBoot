@@ -54,8 +54,6 @@ python3 scripts/flash_firmware.py --port /dev/ttyUSB0 flash-all \
 
 This flashes the bootloader, partition table, selector app, and all firmware binaries in one go.
 
-If needed you can select the port with "--port /dev/ttyXXXX"
-
 ### Update a single slot
 
 ```bash
