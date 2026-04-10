@@ -10,8 +10,8 @@ The 16MB flash is divided into a **factory partition** (boot selector app) and *
 Flash Layout (16MB):
 ┌──────────────┬──────────┬────────────────────────────┐
 │ 0x000000     │ 32KB     │ Bootloader                 │
-│ 0x008000     │  4KB     │ Partition Table             │
-│ 0x009000     │  4KB     │ Selector Config             │
+│ 0x008000     │  4KB     │ Partition Table            │
+│ 0x009000     │  4KB     │ Selector Config            │
 │ 0x00A000     │ 16KB     │ NVS (active)               │
 │ 0x00E000     │  8KB     │ OTA Data (boot selection)  │
 │ 0x010000     │  1MB     │ Boot Selector (factory)    │
@@ -53,6 +53,8 @@ python3 scripts/flash_firmware.py --port /dev/ttyUSB0 flash-all \
 ```
 
 This flashes the bootloader, partition table, selector app, and all firmware binaries in one go.
+
+If needed you can select the port with "--port /dev/ttyXXXX"
 
 ### Update a single slot
 
