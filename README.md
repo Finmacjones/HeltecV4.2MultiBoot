@@ -131,3 +131,8 @@ To **skip auto-boot** and force the full menu: hold USER while pressing RST.
 │   └── flash_firmware.py   # Flash utility
 └── firmware/               # Put your .bin files here
 ```
+## 💖 Support this project
+
+If you find this project helpful, consider donating:
+
+[![Donate with PayPal](https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif)](https://www.paypal.com/donate/?hosted_button_id=4C4CUTVPAS444)
